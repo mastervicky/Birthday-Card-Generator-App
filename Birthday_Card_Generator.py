@@ -29,7 +29,7 @@ def load_decor_image(filename, size=None):
     """ Helper to load and resize decoration images """
     img = Image.open(os.path.join("assets", filename)).convert("RGBA")
     if size:
-        img = img.resize(size, Image.ANTIALIAS)
+        img = img.resize(size, Image.Resampling.LANCZOS)
     return img
 
 # function to create a birthday card
