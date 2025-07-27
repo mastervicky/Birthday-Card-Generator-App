@@ -3,6 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import matplotlib.pyplot as plt
 from datetime import date
 import io
+import os
 
 # function to create a growth graph based on the birth year
 def create_growth_graph(birth_year):
